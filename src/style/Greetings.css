@@ -1,0 +1,64 @@
+h2{
+    margin: 0;
+    padding: 0;
+}
+.greetings-wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/bg-intro-desktop.png);
+    background-color: hsla(0, 100%, 74%, 0.911) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: 1s opacity ease-in-out;
+}
+.greet-item-2 > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 0.5px;
+    animation: 1s toTop ease forwards;
+}
+.greet-item-1{ padding-block-end:30px;}
+.greet-item-1 > .fa-check{
+    font-size: 45px;
+    color: rgb(9, 196, 105);
+    background-color: white;
+    padding: 18px 20px 18px 20px;
+    border-radius: 50%;
+    animation: 1s toTop ease forwards;
+}
+
+@keyframes toTop {
+    
+     0%{
+        
+         opacity: 0;
+         transform: translateY(-100%);
+     }
+     
+     100%{
+        
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes opacity {
+    
+    0%{
+       
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 0.5;
+    }
+    
+    100%{
+       
+       opacity: 1;
+   }
+}
